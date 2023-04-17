@@ -15,7 +15,7 @@ public class HomeworkLessonThree {
                 {"1", "2", "3", "b"}};
         try {
             try {
-                Integer summ = summElementsOfArray(incorrect);
+                Integer summ = summElementsOfArray(incorrect);//необходимо выбрать массив для проверки
                 System.out.println("Сумма элементов массива: " + summ);
             } catch (MyArraySizeException e) {
                 e.printStackTrace();
@@ -53,9 +53,6 @@ public class HomeworkLessonThree {
     }
 
     public static class MyArrayDataException extends RuntimeException {
-        public int i;
-        public int j;
-
         public MyArrayDataException(int i, int j) {
             System.out.println("Не удалось преобразовать элемент в число");
             System.out.println("Ошибка в ячейке: " + i + "x" + j);
